@@ -15,6 +15,10 @@ void setup()
 void loop()
 {
   clearDisplay();
+  zero();
+  delay(1000);
+  
+  clearDisplay();
   one();
   delay(1000);
   
@@ -50,9 +54,6 @@ void loop()
   nine();
   delay(1000);
   
-  clearDisplay();
-  zero();
-  delay(1000);
 }
 
 void one()
@@ -98,6 +99,7 @@ void five()
 
 void six()
 {
+    digitalWrite(10,HIGH);
     digitalWrite(2,HIGH);
     digitalWrite(3,HIGH);
     digitalWrite(4,HIGH);
